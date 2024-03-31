@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(56, 55, 55);
+    z-index: 100;
+
+}
+
+.nav-content {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+nav .logo a {
+    font-size: 1.5rem;
+    color: orangered;
+    font-weight: 600;
+    transition: .3s ease;
+}
+
+nav .logo a:hover {
+    color: aqua;
+    text-shadow: 0 0 25px aqua, 0 0 40px aqua;
+    transform: scale(1.1);
+}
+
+span {
+    color: aqua;
+}
+
+.project-content span {
+    color: orangered;
+}
+
+nav .checkbox {
+    display: none;
+}
+
+nav input {
+    display: none;
+}
+
+nav .checkbox i {
+    color: var(--primary-color);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    transition: left 0.3s;
+}
+
+ul li a {
+    padding: 0.5rem 1rem;
+    color: aqua;
+    font-weight: 550;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+ul li a:hover,
+a.move {
+    color: orangered;
+    border-bottom: 3px solid orangered;
+}
+
+
+.home {
+    background: orangered;
+}
+
+.home-content,
+.skills-content,
+.project-content {
+    min-height: 100vh;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-content h3 {
+    font-size: 42px;
+    margin-bottom: 0.5rem;
+}
+
+.home-content h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+p {
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.btn-box {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-button {
+    padding: 1rem 2rem;
+    background-color: aqua;
+    color: black;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-button:hover {
+    background-color: white;
+    color: orangered;
+}
+
+.img-box,
+.skills-img,
+.project-img {
+    display: grid;
+    place-items: center;
+}
+
+.img-box img {
+    border-radius: 50px;
+    width: min(25rem, 90%);
+}
+
+
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: aqua;
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
+    width: 50px;
+}
+
+.skills-box {
+    background: black;
+}
+
+.project-box {
+    background: aqua;
+}
+
+.skills-img img {
+    width: min(8rem, 90%);
+    box-shadow: 0 0 25px aqua, 0 0 50px aqua;
+    border-radius: 50%;
+
+}
+
+.project-img img {
+    width: min(25rem, 90%);
+    box-shadow: 0 0 25px orangered, 0 0 50px orangered;
+    border-radius: 50px;
+
+}
+
+.skills-content h2,
+.project-content h2 {
+    margin-bottom: 0.5rem;
+    font-size: 42px;
+}
+
+
+.skills-content p {
+    color: white;
+    font-size: 20px;
+    margin: 2em 0 3em;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 36px;
+}
+
+.contact-form form {
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.contact-form form .input-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-form form .input-box input,
+.contact-form form textarea {
+    width: 100%;
+    padding: 1.5em;
+    font-size: 18px;
+    color: black;
+    background: white;
+    border-radius: .8rem;
+    margin: 1rem 0;
+    resize: none;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: rgb(56, 55, 55);
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+
+.footer .social a {
+    font-size: 24px;
+    color: white;
+    border: 2px solid aqua;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    box-shadow: inset 0 0 10px aqua, 0 0 10px aqua;
+    transition: 0.3s ease;
+}
+
+.footer .social a:hover {
+    transform: scale(1.2) translateY(-10px);
+    color: aqua;
+    border: 2px solid aqua;
+}
+
+
+@media (width < 940px) {
+    nav .checkbox {
+        display: block;
+    }
+
+    ul {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 85px);
+        left: -100%;
+        top: 85px;
+        background-color: rgb(56, 55, 55);
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+        backdrop-filter: blur();
+    }
+
+    nav #check:checked~ul {
+        left: 0;
+    }
+
+    ul li a {
+        font-size: 1.25rem;
+    }
+
+    .home-content,
+    .skills-content,
+    .project-content {
+        padding: 10rem 1rem 5rem 1rem;
+        text-align: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .img-box,
+    .skills-img,
+    .project-img {
+        grid-area: 1/1/2/2;
+    }
+
+    .btn-box {
+        margin: auto;
+    }
+}
